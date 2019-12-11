@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Quiz 2</title>
+<script>
+  function drawTriangleAndFindArea(){
+    ctx = canvas.getContext("2d")
+    ctx.strokeStyle="purple"
+    ctx.fillStyle="pink"
+    ctx.lineWidth=3
+    ctx.beginPath()
+    ctx.moveTo(0,0);
+    ctx.lineTo(0+(aTF.value), 0+(bTF.value));
+    ctx.lineTo(0+(cTF.value), 0+(dTF.value));
+    ctx.closePath()
+    ctx.stroke()
+    ctx.fill()
+
+  let a = aTF.value
+  let b = bTF.value
+  let c = cTF.value
+  let d = dTF.value
+  let Area = (a*d-b*c)/2
+    areaLabel.innerHTML=
+      "The area is "
+      +Area.toFixed(1)
+  }
+  </script>
+</head>
+<body>
+  <h1> Quiz 2</h1>
+  <div>
+    <body class="container">
+      Enter first points (a,b) where a and b are between 0 and 500 <br>
+      a <input type="number" id="aTF.value"><br>
+      b <input type="number" id="bTF.value"><br>
+      Enter the second point (c,d) <br>
+      c <input type="number" id="cTF.value"><br>
+      d <input type="number" id="dTF.value"><br>
+</body>
+</div>
+<button onClick="drawTriangleAndFindArea()"> DrawTriangleandFindArea</button> <br>
+<label id="areaLabel"> ? </label> <br>
+  <canvas id="canvas" width="500" height="500">
+</body>
+</html>
