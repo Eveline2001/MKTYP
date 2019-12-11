@@ -1,35 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title> quiz 2 </title>{
-</head>
-<body>
-<h1> Quiz 2</h1>
-Enter four points (a,b,c,d) where a-d are between 0 and 500<br>
- a <input type="" id="0-500"><br>
- b <input type="" id="0-500"><br>
- c <input type="" id="0-500"><br>
- d <input type="" id="0-500"><br>
-<button onClick="calcareoftriangle()">
-  Calculate area of triangle
-</button>
-<br>
-<label id="resultLabel">
-  The area =
-</label>
-
+<title> quiz 2</title>
 <script>
 function Drawandcalcareoftriangle(){
-  a = aTF.value
-  b = bTF.value
-  c = cTF.value
-  d = dTF.value
-  resultLabel.innerHTML =
+    ctx.canvas.getContext("2d")
+    let a = aTF.value
+    let b = bTF.values
+    let c = cTF.value
+    let d = dTF.value
+    let area = (a*c+b*d)/2
+console.log(a=aTf),(b=bTF),(c=cTF),(d=dTF)
+    AreaLabel.innerHTML =
+    "The area is.."
+    Area.tofixed(1)
     "areaoftriangle "(a*d +b*c)/2
-    ctx = canvas.getContext("2d")
-          ctx.strokeStyle="red"
+          ctx.strokeStyle="blue"
           ctx.fillStyle="purple"
-          ctx.beginPath();
+          ctx.linewidth
+          ctx.beginPath()
           ctx.moveTo(0,0)
           ctx.lineTo(0+(aTF.value), 0+(bTF.value));
           ctx.lineTo(0+(cTF.value), 0+(dTF.value));
@@ -38,8 +27,6 @@ function Drawandcalcareoftriangle(){
           ctx.fill()
 
 }
-}
-
-
 </script>
-</body>
+</head>
+</html>
