@@ -3,8 +3,9 @@
 <head>
 <title> Quiz2 </title>
 <script>
+
   function drawTriangleAndFindArea(){
-    ctx = canvas.getContext("2d")
+    ctx= canvas.getContext("2d")
     ctx.strokeStyle="purple"
     ctx.fillStyle="blue"
     ctx.lineWidth=3
@@ -23,26 +24,23 @@
   let d = dTF.value
   let Area = (a*d-b*c)/2
     areaLabel.innerHTML=
-    "The area is" + Area + "inches squared"
+    "The area is"+ Area +"inches squared"
 
   }
   </script>
 </head>
 <body>
   <h1>Quiz 2</h1>
-</div>
-    <body class="container">
-      Enter first points (a,b) where a and b are between 0 and 500 <br>
-      a<input type="text"
-      id="aTF.value"><br>
-      b<input type="text"
-      id="bTF.value"><br>
-      Enter the second point (c,d) <br>
-      c<input type="text"
-      id="cTF.value"><br>
-      d<input type="text"
-      id="dTF.value"><br>
+  Enter first points (a,b) where a and b are between 0 and 500
+  <br>
+      a<input type="text"  id="aTF.value"><br>
+      b<input type="text" id="bTF.value"><br>
+      Enter the second point (c,d)
+      <br>
+      c<input type="text" id="cTF.value"><br>
+      d<input type="text" id="dTF.value"><br>
       <button onclick="drawTriangleandFindArea()">
+
 Draw Triangle and Find Area
 </button>
 <br>
